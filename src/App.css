@@ -1,0 +1,165 @@
+.App-header {
+  min-height: 100vh;
+  display: flex ;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.fiveResults{
+  align-items: center;
+  justify-content: center;
+}
+.ingredients{
+  background-color: rgb(130, 130, 130, 0.4);
+  width: 40vw;
+  border-radius: 3vw;
+  padding-bottom: 2vh;
+}
+
+.resultDiv{
+  position: relative;
+  color: #666 !important;
+  font-size: inherit;
+  text-decoration: none;
+  text-align: center;
+  background: rgb(255, 248, 220, 0.7);
+  min-width: 80vw;
+  height: auto;
+  margin: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.resultDiv:hover {
+  background: #a6c7ff;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+  }
+
+.introPara{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 300%;
+  top: 10vh;
+  font-style: italic;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #f5f2d0;
+}
+.introParaLite{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 180%;
+  padding-top: 5vh;
+  margin-bottom: 0;
+  padding-bottom: 0vh;
+  margin-top: 5vh;
+  font-style: italic;
+  bottom: 2vh;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #f5f2d0;
+}
+
+.topnav{
+  overflow: hidden;
+  background-color:rgba(0,0,0,0.4);
+  position: absolute;
+  z-index: 9;
+  width: 100vw;
+  text-align: center;
+  height: 6vh;
+}
+
+.topnav .login-container {
+  float: center;
+}
+
+li{
+  font-size: 140%;
+  padding-top: 1vh;
+  margin-bottom: 0;
+  padding-bottom: 0vh;
+  margin-top: 1vh;
+  font-style: italic;
+  bottom: 1vh;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #f5f2d0;
+}
+
+/* Style the input field inside the navbar */
+.topnav input[type=text] {
+  float: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border: none;
+  width: 20vw; /* adjust as needed (as long as it doesn't break the topnav) */
+  font-size:17px;
+  padding:10px 10px 10px 5px;
+  background-color: cornsilk;
+  display: inline;
+  border:none;
+  border-bottom:3px solid #0c0629;
+}
+
+/* Style the button inside the input container */
+.topnav .login-container button {
+  float: inline-end;
+  padding:1vh;
+  border-radius: 4px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  background-color: azure;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+  background: #ccc;
+}
+
+.rec {
+  background-color:rgba(0,0,0,0.4);
+  z-index: 8;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+  text-align: center;
+  height: auto;
+}
+
+.rec_card{
+  display: inline;
+  float: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+h3{
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border: none;
+  padding:10px 10px 10px 5px;
+  display: inline-block;
+  border:none;
+  font-size: 20px;
+  color: cornsilk;
+  font-weight: bold;
+}

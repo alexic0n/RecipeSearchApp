@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input 				{
+  font-size:20px;
+  padding:10px 10px 10px 5px;
+  background-color: cornsilk;
+  display:block;
+  width:80vw;
+  border:none;
+  border-bottom:3px solid #0c0629;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+.input_label 				 {
+  color:#888; 
+  font-size:20px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-34px;
+  font-size:25px;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #f5f2d0;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:80.7vw; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#a6c7ff; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+*{
+    font-family: 'Quicksand', sans-serif;
+  }
+  /* INPUT */
+  input[type="checkbox"]{
+    appearance:none;
+    width:45px;
+    height:16px;
+    border:1px solid #aaa;
+    border-radius:2px;
+    background:#ebebeb;
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    vertical-align:middle;
+    transition: background 0.3s;
+    box-sizing:border-box;
+  }
+  input[type="checkbox"]:after{
+    content:'';
+    position:absolute;
+    top:-1px;
+    left:-1px;
+    width:20px;
+    height:20px;
+    background:white;
+    border:1px solid #aaa;
+    border-radius:2px;
+    transition: left 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  input[type="checkbox"]:checked{
+    background:#a6c7ff;
+    border-color:#8daee5;
+  }
+  input[type="checkbox"]:checked:after{
+    left:23px;
+    border-color:#8daee5;
+  }
+  
+  input[type="checkbox"]:hover:not(:checked):not(:disabled):after,
+  input[type="checkbox"]:focus:not(:checked):not(:disabled):after{
+    left:0px;
+  }
+  
+  input[type="checkbox"]:hover:checked:not(:disabled):after,
+  input[type="checkbox"]:focus:checked:not(:disabled):after{
+    left:22px;
+  }
+  
+  input[type="checkbox"]:disabled{
+    opacity:0.5;
+  }
+
+.example_a {
+  color: #666 !important;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-decoration: none;
+  background: cornsilk;
+  padding: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  }
+.example_a:hover {
+  background: #a6c7ff;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+  }
+
+.a_3 {
+  color: #666 !important;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-decoration: none;
+  background: rgb(255, 248, 220,0.6);
+  padding: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  }
+.a_3:hover {
+  background: rgb(166, 199, 255,0.8);
+  }
